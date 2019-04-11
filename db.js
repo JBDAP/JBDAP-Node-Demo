@@ -12,9 +12,8 @@ let conn = JBDAP.knex({
     asyncStackTraces: true,
     debug: false
 })
-module.exports.conn = conn
 
-module.exports.init = async function() {
+let init = async function() {
     let done = await conn.schema.hasTable('JBDAP_tables_done')
     if (done === false) {
         await Helper.createTables(conn,tables)
@@ -33,7 +32,7 @@ module.exports.init = async function() {
     }
 }
 
-module.exports.fill = async function() {
+let fill = async function() {
     let res = await conn.from('User').count('id as count')
     if (res[0].count === 0) {
         console.log('- 开始填充 [Role] 表')
@@ -136,3 +135,5 @@ module.exports.fill = async function() {
         await conn('JBDAP_Token').insert(tokens)
     }
 }
+
+export { conn, init, fill}

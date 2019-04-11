@@ -3,7 +3,7 @@ module.exports = {
         token: require('./_token').userToken
     },
     needLogs: false,
-    needTrace: false,
+    needTrace: true,
     commands: [
         {
             name: 'delComment',

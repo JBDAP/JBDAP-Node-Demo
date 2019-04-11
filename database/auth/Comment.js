@@ -5,6 +5,8 @@
 // 引入数据库连接
 const conn = require('../../db').conn
 
+let conn = db
+
 module.exports = {
     name: 'Comment',
     verify: {

@@ -10,8 +10,8 @@
   "license": "GPL-3.0",
   "dependencies": {
     "glob": "^7.1.3",
-    "jbdap-engine": "^0.1.13",
-    "jbdap-helper": "^0.1.12",
+    "jbdap-engine": "^0.1.19",
+    "jbdap-helper": "^0.1.14",
     "sqlite3": "^4.0.6"
   }
 }
