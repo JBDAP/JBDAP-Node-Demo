@@ -136,4 +136,4 @@ let fill = async function() {
     }
 }
 
-export { conn, init, fill}
+module.exports = { conn, init, fill}
