@@ -1,6 +1,6 @@
 {
   "name": "jbdap-node-demo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An official demo for usages of jbdap-engine and jbdap-helper",
   "main": "index.js",
   "scripts": {
