@@ -4,14 +4,14 @@
   "description": "An official demo for usages of jbdap-engine and jbdap-helper",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "updependencies": "yarn upgrade jbdap-engine@latest jbdap-helper@latest glob@latest sqlite3@latest"
   },
   "author": "JBDAP TEAM",
   "license": "GPL-3.0",
   "dependencies": {
-    "glob": "^7.1.3",
-    "jbdap-engine": "^0.2.1",
-    "jbdap-helper": "^0.2.1",
-    "sqlite3": "^4.0.6"
+    "glob": "^7.1.4",
+    "jbdap-engine": "^0.2.2",
+    "jbdap-helper": "^0.2.2",
+    "sqlite3": "^4.0.8"
   }
 }
